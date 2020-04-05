@@ -433,8 +433,8 @@ BigInt operator/(const int &lhs, const BigInt &rhs) {
 }
 
 BigInt operator%(const BigInt &lhs, const BigInt &rhs) {
-    return (lhs - lhs / rhs * rhs) *
-        (lhs.positive_ == rhs.positive_ ? 1 : -1);
+    return (lhs - lhs / rhs * rhs)
+        * (lhs.positive_ == rhs.positive_ ? 1 : -1);
 }
 
 BigInt operator%(const BigInt &lhs, const int &rhs) {
